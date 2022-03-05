@@ -12,6 +12,7 @@ This is my frontendmentor.io challenge main repo. All my challenges will be main
 | Tags  | Challenge | Live|  Code|  Type| 
 | --- | -- |  -- | --  |  -- |
 | HTML--CSS | Clipboard landing page | [Live](https://fyrfli.github.io/clipboard-landing-page) | [Code](https://github.com/fyrfli/frontendmentor-challenges/-/tree/clipboard-landing-page)| Free |
+| HTML--CSS | Suite landing page |  |  | Premium |
 
 
 ## Newbie Challenges
