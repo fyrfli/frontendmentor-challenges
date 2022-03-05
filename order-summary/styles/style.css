@@ -133,6 +133,7 @@ footer {
     }
     .price-plan {
         width: 24rem;
+        grid-template-columns: 6rem 8rem 10rem;
     }
     .order-summary p {
         width: 28ch;
