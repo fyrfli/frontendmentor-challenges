@@ -1,0 +1,337 @@
+/* generics */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+html {
+    font-size: 62.5%;
+    font-family: "Bai Jamjuree", sans-serif;
+    color: hsl(201, 11%, 66%);
+}
+body {
+    margin: 1% auto;
+    font-size: 2rem;
+    background-image: url("../images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.spacer {
+    height: 4rem;
+    width: auto;
+}
+/* end generics */
+
+/* main */
+.cliplogo {
+    padding: 1rem;
+    background-clip: border-box;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    text-align: center;
+    margin: 4rem 6rem;
+    line-height: 3rem;
+}
+header h1 {
+    margin: 1rem;
+    color: hsl(210, 10%, 33%);
+    font-size: 4rem;
+}
+header img {
+    width: 10rem;
+}
+.top h2 {
+    color: hsl(210, 10%, 33%);
+    text-align: center;
+    line-height: 3rem;
+}
+.top p {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+/* buttons */
+.downloads {
+    display: grid;
+    grid-template: 
+        "ios mac";
+    gap: 1rem;
+    width: 40%;
+    margin: auto;
+    line-height: 3rem;
+}
+.btn {
+    margin: 1rem auto;
+}
+.ios {
+    grid-area: ios;
+    background-color: hsl(171, 66%, 44%);
+    padding: 1.4rem 3.4rem;
+    border-radius: 30px;
+    color: #fff;
+    box-shadow: 4px 4px 20px hsla(171, 66%, 44%,0.5);
+    font-size: 1.8rem;
+}
+.mac {
+    grid-area: mac;
+    background-color: hsl(233, 100%, 69%);
+    padding: 1.4rem 3.4rem;
+    border-radius: 30px;
+    color: #fff;
+    box-shadow: 4px 4px 20px hsla(233, 100%, 69%,0.5);
+    font-size: 1.8rem;
+}
+.container {
+    width: 90%;
+    margin: 1rem auto;
+    line-height: 4rem;
+}
+.container > h2 {
+    color: hsl(210, 10%, 33%);
+    text-align: center;
+}
+.container > p {
+    margin: 2rem auto;
+    text-align: center;
+}
+.mac-feats {
+    display: grid;
+    grid-template-areas: 
+        "mac-pic srch"
+        "mac-pic sync"
+        "mac-pic hist";
+    gap: 2rem;
+    padding: 2rem;
+}
+.mac-feats h2 {
+    color: hsl(210, 10%, 33%);
+    /* margin-bottom: 1rem; */
+}
+.feat {
+    padding: 2rem;
+}
+.computer {
+    width: 90%;
+    margin: auto;
+}
+.ios-pic {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+.actions {
+    display: grid;
+    grid-template-areas: 
+        "blacklist snippets preview";
+    gap: 2rem;
+}
+.action {
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.6rem;
+    width: 300px;
+}
+.icon {
+    background-clip: border-box;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 20px;
+    margin: auto;
+    display: block;
+    margin-bottom: 2rem;
+}
+.blacklist {
+    background-image: url("../images/icon-blacklist.svg");
+}
+.snippets {
+    background-image: url("../images/icon-text.svg");
+}
+.preview {
+    background-image: url("../images/icon-preview.svg");
+}
+
+/* sponsors */
+.sponsors {
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: auto;
+    justify-items: center;
+}
+.logo {
+    background-clip: border-box;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+}
+.google {
+    background-image: url("../images/logo-google.png");
+    margin: auto;
+}
+.ibm {
+    background-image: url("../images/logo-ibm.png");
+}
+.microsoft {
+    background-image: url("../images/logo-microsoft.png");
+}
+.hp {
+    background-image: url("../images/logo-hp.png");
+}
+.vector {
+    background-image: url("../images/logo-vector-graphics.png");
+}
+.clipboard-footer {
+    background-color: hsla(210, 10%, 33%,0.2);
+    padding: 4rem;
+}
+.ftr {
+    display: grid;
+    grid-template-areas: 
+        "small-logo faq privacy install"
+        "small-logo contact press .";
+    width: 85%;
+    margin: auto;
+}
+.small-logo {
+    background-image: url("../images/logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-area: small-logo;
+}
+.faq { grid-area: faq; }
+.contact { grid-area: contact; }
+.privacy { grid-area: privacy; }
+.press { grid-area: press; }
+.install { grid-area: install; }
+/* .social {
+    display: grid;
+    grid-template-areas: 
+        "facebook twitter instagram";
+    grid-auto-rows: min-content;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.facebook {grid-area: facebook;}
+.twitter {grid-area: twitter;}
+.instagram {grid-area: instagram;} */
+.social {
+    width: 300px;
+    padding: 30px;
+    position: relative;
+    float: right;
+}
+.facebook {
+    /* 
+     fixed border-box no-repeat center/50% url(
+          */
+    background: border-box no-repeat center/100% url("../images/icon-facebook.svg");
+    /* display: block; */
+}
+.twitter {
+    background-image: url("../images/icon-twitter.svg");
+}
+.instagram {
+    background-image: url("../images/icon-instagram.svg");
+}
+
+/* footer */
+.attribution {
+    margin: 2rem auto;
+    font-size: 1rem;
+    text-align: center;
+}
+footer hr {
+    margin: 2rem auto;
+    width: 65%;
+    border-top: 1px dotted hsl(210, 10%, 33%);
+}
+/* responsive settings */
+@media (max-width: 375px) {
+    body {
+        margin: 1rem;
+        background-image: url("../images/bg-header-mobile.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .spacer {
+        height: 8rem;
+        width: auto;
+    }
+    .container {
+        width: 95%;
+    }
+    .downloads {
+        display: grid;
+        grid-template-areas: 
+            "ios" 
+            "mac";
+        grid-template-rows: repeat(2, 1fr);
+        margin: 1rem auto;
+        width: 100%;
+        gap: 1rem;
+    }
+    .btn {
+        width: 100%;
+    }
+    .computer {
+        margin: auto;
+    }
+    .mac-feats {
+        display: grid;
+        grid-template-areas: 
+            "mac-pic"
+            "srch"
+            "sync"
+            "hist";
+        text-align: center;
+        margin: .2rem auto;
+    }
+    .actions {
+        display: grid;
+        grid-template-areas: 
+            "blacklist"
+            "snippets"
+            "preview";
+        gap: 6rem;
+        align-items: center;
+    }
+    .action {
+        margin: auto;
+    }
+    .sponsors {
+        gap: 6rem;
+        margin: 1rem auto;
+    }
+    .logo {
+        margin: auto;
+        width: 260px;
+    }
+    .ftr {
+        display: grid;
+        grid-template-areas: 
+            "small-logo"
+            "faq"
+            "contact"
+            "privacy"
+            "press"
+            "install";
+        margin: auto;
+    }
+}
+

@@ -1,0 +1,188 @@
+/* generics */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+html {
+    font-size: 62.5%;
+    font-family: "Bai Jamjuree", sans-serif;
+    color: hsl(201, 11%, 66%);
+}
+body {
+    margin: 6rem auto;
+    font-size: 2rem;
+    background-image: url("../images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 85%;
+}
+.spacer {
+    height: 2rem;
+}
+/* end generics */
+
+/* responsive settings */
+@media (max-width: 800px) {
+    body {
+        background-image: url("../images/bg-header-mobile.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .downloads {
+        display: flex;
+        flex-flow: column wrap;
+        flex: 1 0 80%;
+        width: 80vw;
+    }
+    .computer {
+        background-position: contain;
+        position: static;
+    }
+    .mac-feats {
+        margin: 4rem auto;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+            "mac-pic"
+            "srch"
+            "sync"
+            "hist";
+        gap: 4rem;
+        padding: 4rem;
+    }
+}
+
+/* main */
+header {
+    text-align: center;
+    width: 55%;
+    margin: 4rem auto;
+}
+header h1 {
+    margin: 1rem;
+    color: hsl(210, 10%, 33%);
+    font-size: 4rem;
+}
+header img {
+    width: 10rem;
+}
+.container {
+    /* debug */
+    background-color: aqua;
+    /* end debug */
+}
+.top {
+    margin: 2rem;
+    text-align: center;
+}
+.top h2 {
+    color: hsl(210, 10%, 33%);
+}
+.mac-feats {
+    margin: 4rem auto;
+    display: grid;
+    grid-template-areas: 
+        "mac-pic srch"
+        "mac-pic sync"
+        "mac-pic hist";
+    gap: 4rem;
+    padding: 4rem;
+}
+.mac-pic {
+    grid-area: mac-pic;
+}
+.computer {
+    width: 60rem;
+    position: relative;
+    float: left;
+}
+.feats {
+    padding: 2rem;
+}
+.feat {
+    padding: 2rem;
+}
+.feat h2 {
+    color: hsl(210, 10%, 33%);
+}
+.srch {
+    grid-area: srch;
+}
+.sync {
+    grid-area: sync;
+}
+.hist {
+    grid-area: hist;
+}
+
+/* buttons */
+.downloads {
+    display: flex;
+    justify-content: center;
+    /* gap: 3rem; */
+}
+.btn {
+    margin: 4rem;
+}
+.ios {
+
+    background-color: hsl(171, 66%, 44%);
+    padding: 1.4rem 2rem;
+    border-radius: 2rem;
+    color: #fff;
+    box-shadow: 4px 4px 20px hsla(171, 66%, 44%,0.5);
+}
+.mac {
+    background-color: hsl(233, 100%, 69%);
+    padding: 1.4rem 2rem;
+    border-radius: 2rem;
+    color: #fff;
+    box-shadow: 4px 4px 20px hsla(233, 100%, 69%,0.5);
+}
+
+/* sponsors */
+.sponsors {
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: auto;
+}
+.logo {
+    padding: 1rem;
+    background-clip: border-box;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.google {
+    background-image: url("../images/logo-google.png");
+}
+.ibm {
+    background-image: url("../images/logo-ibm.png");
+}
+.microsoft {
+    background-image: url("../images/logo-microsoft.png");
+}
+.hp {
+    background-image: url("../images/logo-hp.png");
+}
+.vector {
+    background-image: url("../images/logo-vector-graphics.png");
+}
+
+/* footer */
+.attribution {
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+footer hr {
+    margin: 2rem auto;
+    width: 65%;
+    border-top: 1px dotted hsl(210, 10%, 33%);
+}
