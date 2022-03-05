@@ -1,6 +1,12 @@
 /* generics */
 :root {
-
+    --very-dark-blue: hsl(219, 43%, 16%);
+    --greyish-blue: hsl(218, 20%, 36%);
+    --pale-beige: hsl(30, 33%, 93%);
+    --sorta-white: hsl(30, 29%, 97%);
+    --purpul: hsl(264, 100%, 69%);
+    --piiink: hsl(292, 76%, 54%);
+    --orangeish: hsl(31,100%,65%);
 }
 * {
     margin: 0;
@@ -17,4 +23,7 @@ body {
     margin: 2rem auto;
 }
 /* end generics */
- 
+
+
+
+
