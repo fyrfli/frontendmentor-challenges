@@ -24,6 +24,15 @@ body {
 }
 /* end generics */
 
-
+form {
+    display: inline;
+}
+.button {
+    cursor: pointer;
+    width: 180px;
+    height: 50px;
+    border-radius: 4px;
+    border: 2px solid black;
+}
 
 
