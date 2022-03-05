@@ -1,4 +1,13 @@
-s/* generics */
+/* generics */
+:root {
+    --background-colour: hsl(34, 78%, 91%);
+    --text-colour: hsl(0, 100%, 25%);
+    --light-text-colour: hsla(0, 100%, 25%, 0.5);
+    --link-colour: hsl(135, 78%, 14%);
+    --light-link-colour: hsla(135, 78%, 14%, 0.5);
+    --shadow-grey: hsla(0, 0%, 50%, 0.8);
+    --button-colour: hsl(34, 24%, 74%);
+}
 * {
     margin: 0;
     padding: 0;
@@ -8,11 +17,90 @@ s/* generics */
     border: none;
 }
 html {
-    font-size: 62.5%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #800000;
+    color: var(--text-colour)
 }
 body {
     margin: 2rem auto;
+    background-color: var(--background-colour);
+}
+a:any-link {
+    color: var(--link-colour);
+    /* text-shadow: 0 0 12px var(--light-link-colour); */
 }
 /* end generics */
+
+header {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1.2rem;
+}
+h1 {
+    margin-bottom: 40px;
+}
+main {
+    margin: auto;
+}
+
+.junior__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-items: center;
+    justify-content: center;
+}
+.junior__item {
+    box-shadow: 0 0 12px var(--shadow-grey);
+    max-height: 120px;
+    overflow: hidden;
+    align-self: stretch;
+    border-radius: 6px;
+}
+.junior__item img {
+    display: block;
+    width: 180px;
+    max-height: 90px;
+}
+
+.junior h2,
+.newbie h2 {
+    text-align: center;
+    text-decoration: overline underline;
+    text-underline-offset: 6px;
+    margin: 40px auto;
+}
+.newbie__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-items: center;
+    justify-content: center;
+}
+.newbie__item {
+    box-shadow: 0 0 12px var(--shadow-grey);
+    max-height: 120px;
+    overflow: hidden;
+    align-self: stretch;
+    border-radius: 6px;
+}
+.newbie__item img {
+    display: block;
+    width: 180px;
+    max-height: 90px;
+}
+figure {
+    width: 180px;
+    height: 120px;
+    overflow: hidden;
+}
+figcaption {
+    background-color: var(--button-colour);
+    display: block;
+    position: relative;
+    z-index: 9;
+    width: 90%;
+    margin: auto;
+    border-radius: 6px;
+    padding: 4px;
+    text-align: center;
+}
