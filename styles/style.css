@@ -53,13 +53,14 @@ main {
     box-shadow: 0 0 12px var(--shadow-grey);
     max-height: 120px;
     overflow: hidden;
-    align-self: stretch;
     border-radius: 6px;
 }
 .junior__item img {
     display: block;
     width: 180px;
     max-height: 90px;
+    object-position: top;
+    object-fit: cover;
 }
 
 .junior h2,
@@ -87,6 +88,8 @@ main {
     display: block;
     width: 180px;
     max-height: 90px;
+    object-position: top;
+    object-fit: cover;
 }
 figure {
     width: 180px;
