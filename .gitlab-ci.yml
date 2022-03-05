@@ -3,6 +3,7 @@ pages:
   script:
     - mkdir .public
     - cp -r styles .public
+    - cp -r scrnshots .public
     - cp -r 3-col-preview-card .public
     - cp -r clipboard-landing-page .public
     - cp -r order-summary .public
