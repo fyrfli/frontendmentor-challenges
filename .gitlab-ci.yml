@@ -1,0 +1,18 @@
+pages:
+  stage: deploy
+  script:
+    - mkdir .public
+    - cp -r styles .public
+    - cp -r 3-col-preview-card .public
+    - cp -r clipboard-landing-page .public
+    - cp -r order-summary .public
+    - cp -r qr-code .public
+    - cp -r single-price-grid .public
+    - cp -r testimonials-grid .public
+    - rm -rf public
+    - mv .public public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
