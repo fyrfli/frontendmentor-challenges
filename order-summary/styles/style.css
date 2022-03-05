@@ -1,0 +1,158 @@
+/* generics */
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --bright-blue-shadow: hsla(245, 75%, 52%, 0.5);
+    --pale-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+html {
+    font-family: "Red Hat Display", sans-serif;
+}
+body {
+    margin: 3rem auto;
+    background: local border-box var(--pale-blue) url("../images/pattern-background-desktop.svg") top no-repeat;
+}
+/* end generics */
+
+/* main */
+
+.header-img {
+    display: block;
+    margin: auto;
+    border-radius: 1rem 1rem 0 0;
+    width: 22rem;
+}
+main {
+    width: 22rem;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 0 0 10px 10px;
+}
+.order-summary {
+    text-align: center;
+    padding: 2rem;
+    line-height: 1.6rem;
+}
+.order-summary h1 {
+    font-weight: 900;
+    margin: 1rem auto;
+    color: var(--dark-blue);
+    font-size: 1.7rem;
+}
+.order-summary p {
+    font-weight: 500;
+    font-size: 1.4ch;
+    color: var(--desaturated-blue);
+}
+.price-plan {
+    display: grid;
+    grid-template-columns: 4rem 8rem 6rem;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+    background-color: var(--pale-pale-blue);
+    width: 18rem;
+    border-radius: 10px;
+    padding: .2rem;
+}
+.price-plan-item {
+    padding: .8rem;
+    color: var(--desaturated-blue);
+}
+.price-plan-item h2 {
+    font-size: 14px;
+    color: var(--dark-blue);
+}
+.change-plan {
+    justify-self: end;
+}
+.change-plan a {
+    text-decoration: underline;
+    color: var(--bright-blue);
+}
+.checkout {
+    display: flex;
+    flex-flow: row wrap;
+}
+.checkout-button {
+    background-color: var(--bright-blue);
+    color: var(--pale-pale-blue);
+    width: 18rem;
+    padding: 1.2rem 2rem;
+    margin: 1.6rem auto;
+    border-radius: 10px;
+    box-shadow: 2px 12px 22px var(--bright-blue-shadow);
+    font-weight: 700;
+    transition: transform .6s;
+}
+.checkout-button:hover {
+    transform: scale(110%);
+}
+.cancel-order {
+    color: var(--desaturated-blue);
+    text-align: center;
+    margin: 1.2rem auto;
+    font-weight: 700;
+}
+footer {
+    margin-top: .8rem;
+}
+ 
+/* footr */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+/* end footer */
+
+/* media query for desktop version */
+@media screen and (min-width: 800px) {
+    body {
+        margin: 12rem auto;
+        background: border-box var(--pale-blue) url("../images/pattern-background-desktop.svg") repeat-x;
+    }
+    .header-img {
+        width: 28rem;
+    }
+    main {
+        width: 28rem;
+    }
+    .price-plan {
+        width: 24rem;
+    }
+    .order-summary p {
+        width: 28ch;
+        font-size: 18px;
+        text-align: center;
+        margin: 1rem auto;
+    }
+    .checkout {
+        display: flex;
+        flex-direction: column;
+    }
+    .checkout-button {
+        width: 24rem;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+    .cancel-order {
+        margin-top: 1rem;
+    }
+    footer {
+        margin-top: 1.8rem;
+    }
+}

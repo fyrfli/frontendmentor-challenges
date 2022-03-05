@@ -1,0 +1,50 @@
+/* Alternative styling for smaller screens */
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 1.2em;
+        margin: 2% auto;
+    }
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    background-color: #D5E1EF;
+    font-size: 15px;
+}
+
+/* Outer container holding all elements */
+.container {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 10% auto;
+    padding: 10px 10px;
+    box-shadow: -2px 2px 12px #b4b3b3;
+}
+
+/* div element for the qr code image - using background image instead of a img tag */
+.qr-code { 
+    width: 300px;
+    height: 300px;
+    margin: 2px auto;
+    background-image: url("../images/image-qr-code.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+/* Heading or "lead-in" */
+.heading {
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+}
+
+/* Description or paragraph or instruction */
+.description {
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+}

@@ -1,0 +1,137 @@
+body {
+    background-color: #EDF2F8;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 13px;
+    margin: 1.2rem auto;
+}
+.dan {
+    grid-area: dan;
+    background-color: #733FC8;
+    padding: 20px;
+    color: #cfcfcf;
+}
+.dan h3 {
+    color: #cfcfcf80;
+}
+.jon {
+    grid-area: jon;
+    background-color: #49556B;
+    padding: 20px;
+    color: #cfcfcf;
+}
+.jon h3 {
+    color: #cfcfcf80;
+}
+.jea {
+    grid-area: jea;
+    background-color: #FFFFFF;
+    padding: 20px;
+    color: hsl(217, 19%, 35%);
+}
+.jea p {
+    color: hsl(217, 19%, 35%);
+}
+.pat {
+    grid-area: pat;
+    background-color: #151D28;
+    padding: 20px;
+    color: #cfcfcf;
+}
+.pat .title .para {
+    color: #ffffff80;
+}
+.kia {
+    grid-area: kia;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+.box {
+    border-radius: 6px;
+    box-shadow: 10px 10px 40px hsl(0, 0%, 81%);
+    padding: 36px;
+}
+.box img {
+    border-radius: 100px;
+    border: 2px solid hsla(0, 0%, 81%, 0.5);
+    float: left;
+    margin-right: 10px;
+    width: 30px;
+}
+.box p {
+    color: #cfcfcfb3;
+    font-size: .9em;
+}
+.jea p, .kia p {
+    color: hsla(217, 19%, 35%, 0.80);
+}
+.box name {
+    color: #808080b3;
+}
+.box .title {
+    color: hsla(0, 0%, 81%, 0.85);
+    margin: 0;
+    margin-bottom: 20px;
+}
+.box .para {
+    font-size: 1.6em;
+    margin: 0;
+}
+h2 {
+    font-size: .8em;
+    margin: 0;
+}
+h3 {
+    font-size: .6em;
+    margin: 0;
+}
+svg {
+    float: right;
+}
+.container {
+    margin: 2% 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "dan dan jon kia"
+        "dan dan jon kia"
+        "jea pat pat kia"
+        "jea pat pat kia";
+    gap: 10px;
+}
+@media (max-width: 800px) {
+    .container {
+        /* width: 375px; */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "dan"
+            "dan"
+            "dan"
+            "jon"
+            "jon"
+            "jea"
+            "jea"
+            "pat"
+            "pat"
+            "pat"
+            "kia"
+            "kia"
+            "kia";
+        gap: 30px;
+    } 
+}
+.attribution {
+    text-align: center;
+    margin-top: 20px;
+    font-size: .9em;
+    color: #00000080;
+}
+.attribution a:any-link {
+    text-decoration: none;
+    color: #733FC890;
+}
+.attribution a:hover {
+    text-shadow: 0 0 10px #80808080;
+    cursor: grab;
+}

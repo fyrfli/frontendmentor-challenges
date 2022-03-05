@@ -1,0 +1,128 @@
+/* generics */
+
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --pale-cyan: hsla(171,66%,44%,0.5);
+    --light-blue: hsl(233, 100%, 69%);
+    --pale-blue: hsla(223,100%,69%,0.5);
+    --dark-grey-blue: hsl(210, 10%, 33%);
+    --greyish-blue: hsl(201, 11%, 66%);
+    --light-greyish-blue: hsla(201, 11%, 66%, 0.5);
+    --footer-grey: hsla(210, 10%, 33%, 0.2);
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+}
+html {
+    font-family: "Bai Jamjuree", sans-serif;
+    color: var(--dark-grey-blue);
+}
+body {
+    margin: 4rem 0.1rem 0.1rem;
+}
+h1 {
+    font-size: 2rem;
+    margin: 4rem auto;
+}
+p {
+    /* font-size: 1.4rem; */
+    color: var(--greyish-blue);
+    margin: 4rem auto;
+    max-width: 42ch;
+}
+img {
+    display: block;
+    margin: auto;
+}
+/* end generics */
+
+/* top */
+.top {
+    min-width: 0;
+    text-align: center;
+}
+.top img {
+    display: block;
+    margin: auto;
+    width: 10rem;
+}
+.lead-in {
+    text-align: center;
+    margin: 4rem auto;
+}
+.downloads {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem auto;
+}
+.button {
+    padding: 1.5rem 6rem;
+    border-radius: 6rem;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.ios {
+    background-color: var(--strong-cyan);
+    box-shadow: 2px 2px 10px var(--pale-cyan);
+}
+.mac {
+    background-color: var(--light-blue);
+    box-shadow: 2px 2px 10px var(--pale-blue);
+}/* end top */
+
+/* middle */
+.middle {
+    min-width: 0;
+    text-align: center;
+}
+.intro {
+    width: 90%;
+    text-align: center;
+    margin: 4rem auto;
+}
+.desktop img {
+    height: 16rem;
+}
+.mobile img {
+    height: 16rem;
+}
+/* end middle */
+
+
+/* footer */
+footer {
+    background-color: var(--footer-grey);
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+}
+.small-logo {
+    height: 4rem;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.socials {
+    display: grid;
+    grid-template-columns: repeat(3, 2.6rem);
+}
+.attribution { 
+    font-size: .9rem; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+/* end footer */
