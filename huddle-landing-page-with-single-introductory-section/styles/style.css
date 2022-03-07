@@ -1,0 +1,122 @@
+/* generics */
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    ---white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--violet);
+    background-image: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    color: var(---white);
+    background-size: contain;
+}
+
+/* end generics */
+
+/* header */
+header {
+    width: 370px;
+}
+
+header img {
+    display: block;
+    height: 100px;
+    width: 120px;
+    margin: 20px 30px;
+}
+
+/* end header */
+
+/* main */
+.main {
+    width: 370px;
+    margin: 40px auto;
+}
+
+.mockups img {
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+.description {
+    margin: 40px auto;
+}
+
+.description h1 {
+    width: 280px;
+    margin: auto;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.description p {
+    width: 304px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 24px;
+    font-size: 16px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.description__cta {
+    display: block;
+    width: 200px;
+    margin: auto;
+    background-color: var(---white);
+    border-radius: 20px;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+    border-radius: 20px;
+    color: var(--violet);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 10px 80px;
+    text-align: center;
+}
+
+.social {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 12px;
+}
+
+/* fontawesome styling using their css tags */
+.fa-brands {
+    color: var(---white);
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* end fontawesome styling using their tags */
+
+/* end main */
+
+
+/* footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    background-color: ;
+}
+
+.attribution a {
+    color: var(--soft-magenta);
+}
