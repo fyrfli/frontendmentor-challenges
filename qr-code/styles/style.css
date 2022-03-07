@@ -33,7 +33,7 @@ body {
 
 .qr-code {
     display: block;
-    width: 75vw;
+    width: 280px;
     margin: auto;
     border-radius: 10px;
 }
