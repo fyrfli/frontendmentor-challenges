@@ -1,50 +1,64 @@
-/* Alternative styling for smaller screens */
-@media screen and (max-width: 320px) {
-    body {
-        font-size: 1.2em;
-        margin: 2% auto;
-    }
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
 }
 
 body {
     font-family: "Outfit", sans-serif;
-    background-color: #D5E1EF;
+    background-color: var(--light-gray);
     font-size: 15px;
 }
 
-/* Outer container holding all elements */
+/* card */
 .container {
-    width: 300px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    margin: 10% auto;
-    padding: 10px 10px;
-    box-shadow: -2px 2px 12px #b4b3b3;
+    background-color: var(--white);
+    width: 320px;
+    border-radius: 20px;
+    margin: 6rem auto;
+    color: var(--dark-blue);
+    padding: 20px;
 }
 
-/* div element for the qr code image - using background image instead of a img tag */
-.qr-code { 
-    width: 300px;
-    height: 300px;
-    margin: 2px auto;
-    background-image: url("../images/image-qr-code.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+.qr-code {
+    display: block;
+    width: 75vw;
+    margin: auto;
     border-radius: 10px;
 }
 
-/* Heading or "lead-in" */
-.heading {
-    font-size: 1.4em;
-    text-align: center;
+.card-header {
     font-weight: 700;
-    color: hsl(218, 44%, 22%);
+    font-size: 24px;
+    text-align: center;
+    margin: 30px auto;
 }
 
-/* Description or paragraph or instruction */
-.description {
-    font-size: 1.1em;
+.card-description {
+    font-size: 15px;
+    color: var(--grayish-blue);
     text-align: center;
-    font-weight: 400;
-    color: hsl(220, 15%, 55%);
+    margin: 20px auto;
+}
+
+
+/* footer */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
