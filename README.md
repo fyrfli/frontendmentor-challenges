@@ -28,3 +28,4 @@ This is my frontendmentor.io challenge main repo. All my challenges will be main
 | HTML--CSS | Stats preview card |  | | Free |
 | HTML--CSS | Order summary | [Live](https://fyrfli.github.io/frontendmentor-challenges/order-summary) | [Code](https://github.com/fyrfli/frontendmentor-challenges/-/tree/order-summary)| Free |
 | HTML--CSS | Single Price Grid | [Live](https://fyrfli.github.io/frontendmentor-challenges/single-price-grid) | [Code](https://github.com/fyrfli/frontendmentor-challenges/-/tree/simgle-price-grid)| Free |
+| HTML--CSS | Huddle landing page | [Live](https://fyrfli.github.io/frontendmentor-challenges/huddle-landing-page-with-single-introductory-section/) | [Code](https://github.com/fyrfli/frontendmentor-challenges/tree/master/huddle-landing-page-with-single-introductory-section)| Free |
