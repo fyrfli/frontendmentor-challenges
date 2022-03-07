@@ -41,7 +41,7 @@ header img {
 /* end header */
 
 /* main */
-.main {
+main {
     width: 370px;
     margin: 40px auto;
 }
@@ -119,4 +119,38 @@ header img {
 
 .attribution a {
     color: var(--soft-magenta);
+}
+
+/* destop styling */
+@media screen and (min-width: 800px) {
+    main {
+        width: 100vw;
+        margin: auto;
+        display: grid;
+        grid-template-areas:
+            "img desc"
+            "img desc"
+            "img desc"
+            ".  social";
+    }
+
+    .mockups {
+        grid-area: img;
+    }
+
+    .mockups img {
+        width: 696px;
+        height: 493px;
+    }
+
+    .description {
+        margin: auto;
+        grid-area: desc;
+    }
+
+    .social {
+        margin: 20px auto;
+        grid-area: social;
+    }
+
 }
