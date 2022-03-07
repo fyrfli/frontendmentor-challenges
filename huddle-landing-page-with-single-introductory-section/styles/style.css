@@ -35,7 +35,7 @@ header img {
     display: block;
     height: 100px;
     width: 120px;
-    margin: 20px 30px;
+    margin: 0 30px;
 }
 
 /* end header */
@@ -114,7 +114,7 @@ main {
 .attribution {
     font-size: 11px;
     text-align: center;
-    background-color: ;
+    margin-bottom: 20px;
 }
 
 .attribution a {
@@ -123,12 +123,27 @@ main {
 
 /* destop styling */
 @media screen and (min-width: 800px) {
+    body {
+        font-family: "Poppins", sans-serif;
+        background-color: var(--violet);
+        background-image: url("../images/bg-desktop.svg");
+        background-repeat: no-repeat;
+        color: var(---white);
+        background-size: cover;
+    }
+
+    header img {
+        display: block;
+        height: 140px;
+        width: 180px;
+        margin: 20px auto;
+    }
+
     main {
-        width: 100vw;
-        margin: auto;
+        margin: 0;
+        width: 90vw;
         display: grid;
         grid-template-areas:
-            "img desc"
             "img desc"
             "img desc"
             ".  social";
@@ -136,21 +151,67 @@ main {
 
     .mockups {
         grid-area: img;
+        margin: 0;
     }
 
     .mockups img {
-        width: 696px;
-        height: 493px;
+        width: 60%;
     }
 
     .description {
-        margin: auto;
+        margin: 20px auto;
         grid-area: desc;
+        text-align: left;
+    }
+
+    .description h1 {
+        text-align: left;
+        margin: 10px auto;
+        width: 480px;
+        font-size: 40px;
+    }
+
+    .description p {
+        text-align: left;
+        margin: 10px auto;
+        width: 480px;
+    }
+
+    .description__cta {
+        width: 200px;
+        margin: 30px 0;
+        background-color: var(---white);
+        border-radius: 20px;
+        box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+        border-radius: 20px;
+        color: var(--violet);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        padding: 10px 80px;
+        text-align: center;
+    }
+
+    .description__cta:active {
+        background-color: var(--soft-magenta);
     }
 
     .social {
+        display: flex;
+        width: 480px;
         margin: 20px auto;
         grid-area: social;
+        justify-content: flex-end;
+        align-content: flex-end;
+    }
+
+    .social i:active {
+        color: var(--soft-magenta);
+    }
+
+    .attribution {
+        width: 90%;
+        text-align: right;
     }
 
 }
