@@ -140,28 +140,31 @@ main {
     }
 
     main {
-        margin: 0;
-        width: 90vw;
+        margin: auto;
+        width: 90%;
         display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
             "img desc"
-            "img desc"
             ".  social";
+        align-content: space-around;
     }
 
     .mockups {
         grid-area: img;
-        margin: 0;
     }
 
     .mockups img {
-        width: 60%;
+        width: 800px;
+        height: 500px;
+        margin-left: 10%;
     }
 
     .description {
-        margin: 20px auto;
         grid-area: desc;
         text-align: left;
+        width: 500px;
     }
 
     .description h1 {
