@@ -14,7 +14,7 @@ This is my frontendmentor.io challenge main repo. All my challenges will be main
 | Yes | HTML--CSS     | Testimonials grid section  | [Live](https://fyrfli.github.io/frontendmentor-challenges/testimonials-grid) | [Code](https://github.com/fyrfli/frontendmentor-challenges/-/tree/testimonials-grid) |Free|
 | Yes | HTML--CSS | Clipboard landing page | [Live](https://fyrfli.github.io/frontendmentor-challenges/clipboard-landing-page/) | [Code](https://github.com/fyrfli/frontendmentor-challenges/-/tree/clipboard-landing-page)| Free |
  No | HTML--CSS | Suite landing page | [Live](https://fyrfli.github.io/frontendmentor-challenges/suite-landing-page/) | [Code](https://github.com/fyrfli/frontendmentor-challenges/-/tree/suite-landing-page)| Premium |
-| No | HTML--CSS | Huddle landing page with features blocks | [Live](https://fyrfli.github.io/frontendmentor-challenges/.no-sync/huddle-landing-page-with-alternating-feature-blocks/) | [Code](https://github.com/fyrfli/frontendmentor-challenges/tree/master/huddle-landing-page-with-alternating-feature-blocks)| Free |
+| No | HTML--CSS | Huddle landing page with features blocks | [Live](https://fyrfli.github.io/frontendmentor-challenges/huddle-landing-page-with-alternating-feature-blocks/) | [Code](https://github.com/fyrfli/frontendmentor-challenges/tree/master/huddle-landing-page-with-alternating-feature-blocks)| Free |
 
 
 ## Newbie Challenges
