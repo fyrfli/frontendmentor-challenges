@@ -2,7 +2,7 @@
 :root {
     --violet: hsl(257, 40%, 49%);
     --soft-magenta: hsl(300, 69%, 71%);
-    ---white: hsl(0, 0%, 100%);
+    --white: hsl(0, 0%, 100%);
 }
 
 * {
@@ -20,7 +20,7 @@ body {
     background-color: var(--violet);
     background-image: url("../images/bg-mobile.svg");
     background-repeat: no-repeat;
-    color: var(---white);
+    color: var(--white);
     background-size: contain;
 }
 
@@ -77,7 +77,7 @@ main {
     display: block;
     width: 200px;
     margin: auto;
-    background-color: var(---white);
+    background-color: var(--white);
     border-radius: 20px;
     box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
     border-radius: 20px;
@@ -97,15 +97,13 @@ main {
     gap: 12px;
 }
 
-/* fontawesome styling using their css tags */
-.fa-brands {
-    color: var(---white);
-    border: 1px solid;
+.social__item {
+    color: var(--white);
+    border: 1px solid var(--white);
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 60px;
 }
 
-/* end fontawesome styling using their tags */
 
 /* end main */
 
@@ -128,7 +126,7 @@ main {
         background-color: var(--violet);
         background-image: url("../images/bg-desktop.svg");
         background-repeat: no-repeat;
-        color: var(---white);
+        color: var(--white);
         background-size: cover;
     }
 
@@ -140,7 +138,7 @@ main {
     }
 
     main {
-        margin: auto;
+        margin: auto 2%;
         width: 90%;
         display: grid;
         width: 100%;
@@ -157,8 +155,8 @@ main {
 
     .mockups img {
         width: 800px;
-        height: 500px;
-        margin-left: 10%;
+        /* height: 500px; */
+        /* margin-left: 10%; */
     }
 
     .description {
@@ -183,7 +181,7 @@ main {
     .description__cta {
         width: 200px;
         margin: 30px 0;
-        background-color: var(---white);
+        background-color: var(--white);
         border-radius: 20px;
         box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
         border-radius: 20px;
@@ -202,7 +200,7 @@ main {
     .social {
         display: flex;
         width: 480px;
-        margin: 20px auto;
+        margin: auto;
         grid-area: social;
         justify-content: flex-end;
         align-content: flex-end;
@@ -213,8 +211,8 @@ main {
     }
 
     .attribution {
-        width: 90%;
         text-align: right;
+        margin-right: 2%;
     }
 
 }
