@@ -1,28 +1,26 @@
 # Frontend Mentor - Profile card component solution
 
-This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+[@fyrfli's](https://github.com/fyrfli) solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Table of contents
-
-[[_TOC_]]
-
-## Overview
-I realised I had not done any directive coding in about 3 days. I had been practicing box layouts and got a little demotivated and realised what I needed was a direction to move in. So I looked for a new challenge to tackle. My goal is to take about two to four hours to complete this challenge.
-
-### The challenge
+## The challenge
 
 - Build out the project to the designs provided
 
-### Screenshot
+## Screenshot
 
 Here is a screenshot of what my solution looks like.
 
-![](../images/screenshot.jpg)
+### Desktop
+![](/images/solution-desktop.jpg)
+
+### Mobile
+
+![](images/solution-mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/fyrfli/frontendmentor-challenges/tree/master/profile-card)
+- Live Site URL: [Live](https://fyrfli.github.io/frontendmentor-challenges/profile-card/)
 
 ## My process
 
@@ -58,10 +56,6 @@ I feel like getting the profile image to move further down the card could have b
 ---
 
 I also had more trouble with the background images than I expected and looking at some other solutions, I am realising how much I don't know.
-
-### Continued development
-
-I wish I had had the confidence to try this out using box layout. And maybe I will try that technique once I am done getting the design right. If I do, I'll post that up on my local gitlab. 
 
 ### Useful resources
 
