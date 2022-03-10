@@ -1,0 +1,91 @@
+:root {
+    --dark-green: hsl(192, 37%, 48%);
+    --light-green: hsl(192, 90%, 77%);
+    --white: hsl(0, 0%, 100%);
+    --violet: hsl(268, 34%, 53%);
+    --pale-violet: hsl(268, 100%, 86%);
+    --greyish-blue: hsl(240, 10%, 57%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+}
+
+/* header */
+
+.logo img {
+    margin: 60px auto;
+    display: block;
+}
+
+.header-imgs {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+
+.header-imgs__left {
+    margin-left: -20px;
+    height: 156px;
+    width: auto;
+}
+
+.header-imgs__right {
+    margin-right: 20px;
+    height: 156px;
+    width: auto;
+}
+
+.intro {
+    margin: 60px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.intro p {
+    color: var(--greyish-blue);
+    padding: 40px 0;
+}
+
+.download {
+    margin: 10px auto;
+    display: inline-block;
+    padding: 20px 60px;
+    border-radius: 40px;
+    background-color: var(--dark-green);
+    color: var(--white);
+}
+
+.version {
+    color: var(--light-green);
+}
+
+.what-is-it {
+    margin: 10px auto;
+    display: inline-block;
+    padding: 20px 30px;
+    border-radius: 40px;
+    background-color: var(--violet);
+    color: var(--white);
+}
+
+.intermission h3 {
+    display: block;
+    margin: auto;
+    border: 1px solid var(--greyish-blue);
+    border-radius: 80px;
+    width: fit-content;
+    padding: 10px 12px;
+    font-size: 16px;
+    color: var(--greyish-blue);
+}
