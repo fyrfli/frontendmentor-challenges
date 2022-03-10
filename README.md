@@ -24,7 +24,7 @@ This is my frontendmentor.io challenge main repo. All my challenges will be main
 | No | HTML--CSS     | Social proof section  | [Live](https://fyrfli.github.io/frontendmentor-challenges/social-proof-section/) | [Code](https://github.com/fyrfli/frontendmentor-challenges/-/tree/social-proof-section)| Free |
 | Yes | HTML--CSS | QR Code component | [Live](https://fyrfli.github.io/frontendmentor-challenges/qr-code) | [Code](https://github.com/fyrfli/frontendmentor-challenges/-/tree/qr-code)| Free |
 | Yes | HTML--CSS | 3 column preview card | [Live](https://fyrfli.github.io/frontendmentor-challenges/3-col-preview-card) | [Code](https://github.com/fyrfli/frontendmentor-challenges/-/tree/3-col-preview-card)| Free |
-| No | HTML--CSS | Profile card | [Live](https://fyrfli.github.io/frontendmentor-challenges/profile-card) | [Code](https://github.com/fyrfli/frontendmentor-challenges/-/tree/profile-card) | Free |
+| Yes | HTML--CSS | Profile card | [Live](https://fyrfli.github.io/frontendmentor-challenges/profile-card) | [Code](https://github.com/fyrfli/frontendmentor-challenges/-/tree/profile-card) | Free |
 | No | HTML--CSS | Four Card Feature Section | [Live](https://fyrfli.github.io/frontendmentor-challenges/four-card-feature-section) | [Code](https://github.com/fyrfli/frontendmentor-challenges/-/tree/four-card-feature-section)| Free |
 | No | HTML--CSS | Stats preview card | [Live](https://fyrfli.github.io/frontendmentor-challenges/stats-preview-card) | [Code](https://github.com/fyrfli/frontendmentor-challenges/-/tree/stats-preview-card)| Free |
 | Yes | HTML--CSS | Order summary | [Live](https://fyrfli.github.io/frontendmentor-challenges/order-summary) | [Code](https://github.com/fyrfli/frontendmentor-challenges/-/tree/order-summary)| Free |
