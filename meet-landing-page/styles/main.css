@@ -41,7 +41,7 @@ body {
 }
 
 .header-imgs__right {
-    margin-right: 20px;
+    overflow: hidden;
     height: 156px;
     width: auto;
 }
@@ -81,7 +81,7 @@ body {
 
 .intermission h3 {
     display: block;
-    margin: auto;
+    margin: 0 auto;
     border: 1px solid var(--greyish-blue);
     border-radius: 80px;
     width: fit-content;
