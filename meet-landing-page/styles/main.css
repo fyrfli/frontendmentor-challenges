@@ -57,7 +57,7 @@ body {
     padding: 40px 0;
 }
 
-.download {
+.download__top {
     margin: 10px auto;
     display: inline-block;
     padding: 20px 60px;
@@ -66,9 +66,10 @@ body {
     color: var(--white);
 }
 
-.version {
+.version__top {
     color: var(--light-green);
 }
+
 
 .what-is-it {
     margin: 10px auto;
@@ -79,13 +80,79 @@ body {
     color: var(--white);
 }
 
-.intermission h3 {
+.images {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 25px;
+    margin: auto;
+    justify-content: center;
+}
+.images__item {
     display: block;
-    margin: 0 auto;
-    border: 1px solid var(--greyish-blue);
-    border-radius: 80px;
-    width: fit-content;
-    padding: 10px 12px;
-    font-size: 16px;
+    width: 151px;
+    height: 143px;
+    border-radius: 10px;
+}
+.features {
+    margin: 4rem 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+
+.features h2 {
+    color: var(--dark-green);
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2rem;
+    letter-spacing: 4px;
+    font-weight: 900;
+}
+.features h3 {
+    font-size: 38px;
+    text-align: center;
+    line-height: 2.2rem;
+}
+
+.features p {
+    font-size: 20px;
     color: var(--greyish-blue);
+    text-align: center;
+    line-height: 2rem;
+}
+
+footer {
+    margin: 4rem;
+    background: url("../assets/mobile/image-footer.jpg"), no-repeat cover var(--dark-green);
+    /* commented out until the background image is in place */
+    /* color: var(--white); */
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2rem;
+}
+
+footer h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+footer p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.download__bottom {
+    display: inline-block;
+    margin: auto;
+    padding: 20px 60px;
+    border-radius: 40px;
+    background-color: var(--violet);
+    color: var(--white);
+    font-weight: 900;
+}
+
+.version__bottom {
+    color: var(--pale-violet);
 }
