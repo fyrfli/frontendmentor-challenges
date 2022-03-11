@@ -17,6 +17,7 @@ This is my frontendmentor.io challenge main repo. All my challenges will be main
 | No | HTML--CSS | Huddle landing page with features blocks | [Live](https://fyrfli.github.io/frontendmentor-challenges/huddle-landing-page-feature-blocks/) | [Code](https://github.com/fyrfli/frontendmentor-challenges/tree/master/huddle-landing-page-feature-blocks)| Free |
 
 
+
 ## Newbie Challenges
 
 | Done| Tags  | Challenge | Live|  Code|  Type| 
@@ -30,3 +31,4 @@ This is my frontendmentor.io challenge main repo. All my challenges will be main
 | Yes | HTML--CSS | Order summary | [Live](https://fyrfli.github.io/frontendmentor-challenges/order-summary) | [Code](https://github.com/fyrfli/frontendmentor-challenges/-/tree/order-summary)| Free |
 | Yes | HTML--CSS | Single Price Grid | [Live](https://fyrfli.github.io/frontendmentor-challenges/single-price-grid) | [Code](https://github.com/fyrfli/frontendmentor-challenges/-/tree/simgle-price-grid)| Free |
 | No | HTML--CSS | Huddle landing page with introductory section | [Live](https://fyrfli.github.io/frontendmentor-challenges/huddle-landing-page-with-single-introductory-section/) | [Code](https://github.com/fyrfli/frontendmentor-challenges/tree/master/huddle-landing-page-with-single-introductory-section)| Free |
+| No | HTML--CSS | Meet landing page | [Live](https://fyrfli.github.io/frontendmentor-challenges/meet-landing-page/) | [Code](https://github.com/fyrfli/frontendmentor-challenges/tree/master/meet-landing-page)| Free |
