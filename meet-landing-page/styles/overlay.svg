@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <filter id="overlay-colour">
+        <feFlood flood-color="hsl(192, 37%, 48%)" flood-opacity="0.8" />
+    </filter>
+</svg>

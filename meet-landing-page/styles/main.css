@@ -17,6 +17,10 @@
     box-sizing: border-box;
 }
 
+svg {
+    display: none;
+}
+
 body {
     font-family: "Red Hat Display", sans-serif;
 }
@@ -83,6 +87,8 @@ body {
 .intermission svg {
     display: block;
     margin: 0 auto;
+    position: relative;
+    z-index: 9;
 }
 
 .images {
@@ -131,9 +137,20 @@ body {
 }
 
 footer {
-    background: fixed border-box var(--dark-green) url("../assets/mobile/image-footer.jpg") 100% no-repeat cover;
-    /* commented out until the background image is in place */
-    /* color: var(--white); */
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: -50px;
+    padding: 100px 0;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    text-align: center;
+    background: var(--dark-green) url("../assets/mobile/image-footer.jpg") center / cover no-repeat border-box;
+    background-blend-mode: luminosity;
+    opacity: 0.8;
+    color: var(--white);
+    position: relative;
+    z-index: 2;
 }
 
 footer h2 {
