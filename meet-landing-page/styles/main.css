@@ -80,6 +80,11 @@ body {
     color: var(--white);
 }
 
+.intermission svg {
+    display: block;
+    margin: 0 auto;
+}
+
 .images {
     display: flex;
     flex-flow: row wrap;
@@ -87,12 +92,14 @@ body {
     margin: auto;
     justify-content: center;
 }
+
 .images__item {
     display: block;
     width: 151px;
     height: 143px;
     border-radius: 10px;
 }
+
 .features {
     margin: 4rem 2rem;
     display: flex;
@@ -109,6 +116,7 @@ body {
     letter-spacing: 4px;
     font-weight: 900;
 }
+
 .features h3 {
     font-size: 38px;
     text-align: center;
@@ -123,13 +131,9 @@ body {
 }
 
 footer {
-    margin: 4rem;
-    background: url("../assets/mobile/image-footer.jpg"), no-repeat cover var(--dark-green);
+    background: fixed border-box var(--dark-green) url("../assets/mobile/image-footer.jpg") 100% no-repeat cover;
     /* commented out until the background image is in place */
     /* color: var(--white); */
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 2rem;
 }
 
 footer h2 {
@@ -155,4 +159,19 @@ footer p {
 
 .version__bottom {
     color: var(--pale-violet);
+}
+
+.attribution {
+    text-align: center;
+    /* color: var(--white); */
+}
+
+.attribution a:any-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.attribution a:hover,
+.attribution a:active {
+    text-shadow: 0 0 10px var(--dark-green);
 }
