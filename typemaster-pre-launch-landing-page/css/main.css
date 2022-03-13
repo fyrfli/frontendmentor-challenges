@@ -21,6 +21,7 @@
     border: none;
     box-sizing: border-box;
 }
+
 /* end generics */
 
 body {
@@ -110,9 +111,11 @@ p {
 }
 
 .keyboard-and-phone {
+    /* filter: url(#orange-overlay); */
+    /* position: relative;
+    z-index: 9; */
     background-color: var(--orange);
-    color: var(--orange);
-    mix-blend-mode: overlay;
+    opacity: 0.75;
     width: 129px;
     height: 193px;
     margin-top: 20px;
