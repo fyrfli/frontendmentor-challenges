@@ -40,10 +40,9 @@ body {
 
 header {
     background: var(--soft-violet) url("../images/image-header-mobile.jpg") center / cover no-repeat border-box;
-    /* padding: 10px; */
     width: auto;
     height: 240px;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     background-blend-mode: multiply;
     opacity: 0.75;
 }
@@ -120,6 +119,7 @@ p {
         width: 540px;
         height: 446px;
         background-position: cover;
+        border-radius: 0 10px 10px 0;
     }
     main {
         grid-area: mn;
