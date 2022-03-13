@@ -24,30 +24,79 @@ html {
 body {
     margin: 2rem auto;
     background-color: var(--very-dark-blue);
+    color: var(--white);
 }
 /* end generics */
 
 /* container */
 .container {
-    width: 375px;
-    margin: 12vh auto;
+    width: 325px;
+    margin: 20px auto;
+    border-radius: 20px;
     background-color: var(--dark-desaturated-blue);
 }
 
 /* header */
-.header-image {
-    /* filter: opacity(0.2) drop-shadow(0 0 0 var(--soft-violet)); */
-    height: 18rem;
-    color: var(--soft-violet);
-    background-color: var(--soft-violet);
-    opacity: 0.75;
-    mix-blend-mode: overlay;
+
+header {
+    background: var(--dark-desaturated-blue) url("../images/image-header-mobile.jpg") center / cover no-repeat border-box;
+    /* padding: 10px; */
+    width: auto;
+    height: 240px;
+    border-radius: 10px;
+    background-blend-mode: soft-light;
 }
+
+/* main */
+main {
+    margin: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    margin: 2.8rem 0;
+}
+p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.75;
+}
+
+.stats {
+    padding: 2rem 0;
+}
+
+.stats__items {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+.stats__item-name {
+    text-transform: uppercase;
+    opacity: 0.75;
+}
+
+.stats__item-number {
+    margin-top: 20px;
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.insights {
+    color: var(--soft-violet);
+}
+
 
 /* footer */
 .attribution { 
     font-size: 11px; 
-    text-align: center; }
+    text-align: center; 
+}
 .attribution a { 
     color: var(--purple-blue); 
 }
