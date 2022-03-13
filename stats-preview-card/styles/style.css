@@ -64,12 +64,14 @@ p {
     opacity: 0.75;
 }
 
-.stats {
+/* .stats {
     padding: 2rem 0;
     text-transform: uppercase;
-}
+} */
 
 .stats__items {
+    padding: 2rem 0;
+    text-transform: uppercase;
     display: flex;
     flex-flow: column nowrap;
     align-content: center;
