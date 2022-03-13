@@ -47,9 +47,8 @@ h1 {
 
 main {
     margin: auto;
+    width: 80%;
 }
-
-
 
 .junior h2,
 .newbie h2 {
@@ -65,7 +64,6 @@ main {
     gap: 20px;
     justify-items: center;
     justify-content: center;
-    width: 85%;
     margin: auto;
 }
 
@@ -90,7 +88,6 @@ main {
     gap: 20px;
     justify-items: center;
     justify-content: center;
-    width: 85%;
     margin: auto;
 }
 
@@ -114,7 +111,6 @@ main {
     gap: 20px;
     justify-items: center;
     justify-content: center;
-    width: 85%;
     margin: auto;
 }
 
