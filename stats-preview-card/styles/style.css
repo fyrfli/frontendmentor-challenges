@@ -66,6 +66,7 @@ p {
 
 .stats {
     padding: 2rem 0;
+    text-transform: uppercase;
 }
 
 .stats__items {
@@ -76,7 +77,6 @@ p {
     text-align: center;
 }
 .stats__item-name {
-    text-transform: uppercase;
     opacity: 0.75;
 }
 
@@ -99,4 +99,41 @@ p {
 }
 .attribution a { 
     color: var(--purple-blue); 
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "mn hdr";
+        width: 1110px;
+        height: 446px;
+        margin-top: 10rem;
+    }
+    header {
+        justify-self: end;
+        grid-area: hdr;
+        width: 540px;
+        height: 446px;
+        background-position: cover;
+    }
+    main {
+        grid-area: mn;
+        width: 375px;
+    }
+    h1 {
+        font-size: 36px;
+        text-align: left;
+    }
+    p {
+        font-size: 15px;
+        line-height: 25px;
+        text-align: left;
+    }
+    .stats__items {
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+
 }
