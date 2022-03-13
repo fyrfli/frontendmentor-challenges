@@ -147,7 +147,6 @@ footer {
     text-align: center;
     background: var(--dark-green) url("../assets/mobile/image-footer.jpg") center / cover no-repeat border-box;
     background-blend-mode: luminosity;
-    opacity: 0.8;
     color: var(--white);
     position: relative;
     z-index: 2;
