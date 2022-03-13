@@ -7,6 +7,13 @@ This is my frontendmentor.io challenge main repo. All my challenges will be main
 -- March 3, 2022.
 
 ---
+## Intermediate Challenges
+
+
+| Done | Tags  | Challenge | Live|  Code|  Type| 
+| ---- | --- | -- |  -- | --  |  -- |
+| No | HTML--CSS | Chat App CSS Illustration | [Live](https://fyrfli.github.io/frontendmentor-challenges/chat-app-css-illustration) | [Code](https://github.com/fyrfli/frontendmentor-challenges/-/tree/chat-app-css-illustration) | Free |
+
 ## Junior Challenges
 
 | Done | Tags  | Challenge | Live|  Code|  Type| 
