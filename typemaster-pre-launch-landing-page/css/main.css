@@ -29,8 +29,8 @@ body {
     margin: 2rem;
 }
 
+
 header {
-    /* margin: 1rem; */
     display: grid;
     grid-template-columns: 2fr 1fr;
     justify-content: space-between;
@@ -38,16 +38,16 @@ header {
 }
 
 header img {
-    margin: 8px 0;
+    margin: 0.8rem 0;
 }
 
 .preorder-now-grey {
-    margin-top: 4px;
+    margin-top: 0.4rem;
     width: 150px;
     height: 48px;
     background-color: var(--light-grey);
     text-transform: uppercase;
-    padding: 14px 0;
+    padding: 1.4rem 0;
     border-radius: 5px;
     font-size: 16px;
     text-align: center;
@@ -69,18 +69,18 @@ header img {
     color: var(--white);
 }
 
-h1 {
+.intro h1 {
     font-weight: 800;
-    font-size: 48;
+    font-size: 48px;
     text-transform: uppercase;
     line-height: 48px;
-    margin: 40px auto;
+    margin: 3rem auto;
 }
 
 p {
     color: var(--darkish-grey);
     line-height: 26px;
-    margin: 40px auto;
+    margin: 3rem auto;
 }
 
 .release-info {
@@ -88,7 +88,7 @@ p {
     grid-template-columns:  1fr 2fr;
     justify-content: space-between;
     grid-template-rows: 1fr;
-    margin: 40px auto;
+    margin: 2rem auto;
 }
 
 .release-info h3 {
@@ -104,37 +104,49 @@ p {
 }
 
 .keyboard-alone {
-    margin-left: 5px;
-    border-radius: 20px;
-    width: 372px;
+    background-image: url("../assets/mobile/image-keyboard.jpg");
+    background-position: top left;
+    background-size: cover;
+    background-clip: border-box;
+    margin-left: 70px;
+    border-radius: 20px 0 0 20px;
+    width: 275px;
     height: 331px;
 }
 
 .keyboard-and-phone {
-    /* filter: url(#orange-overlay); */
-    /* position: relative;
-    z-index: 9; */
+    background-image: url("../assets/mobile/image-phone-and-keyboard.jpg");
+    background-position: top right;
+    background-size: cover;
+    background-clip: border-box;
     background-color: var(--orange);
+    background-blend-mode: overlay;
     opacity: 0.75;
-    width: 129px;
+    width: 110px;
     height: 193px;
     margin-top: 20px;
-    margin-left: -80px;
-    border-radius: 20px;
+    margin-left: -2rem;
+    border-radius: 0 20px 20px 0;
 }
 
 .keyboard-and-glass {
+    background-image: url("../assets/mobile/image-glass-and-keyboard.jpg");
+    background-position: top left;
+    background-size: cover;
     width: 240px;
     height: 193px;
-    display: inline;
-    margin-top: 20px;
-    margin-left: 20px;
+    /* display: inline-block; */
+    margin-top: -190px;
+    margin-left: 100px;
     border-radius: 20px;
+    margin-right: 0;
 }
 .features h1 {
     margin: 50px 20px;
     text-align: center;
     line-height: 36px;
+    text-transform: uppercase;
+    font-size: 36px;
 }
 .features h2 {
     font-size: 24;
@@ -184,4 +196,10 @@ footer {
 .attribution a:hover,
 .attribution a:active {
     text-shadow: 0 0 10px var(--attribution-colour);
+}
+
+/* tablet styling */
+@media screen (max-width: 768px) {
+    
+    
 }
