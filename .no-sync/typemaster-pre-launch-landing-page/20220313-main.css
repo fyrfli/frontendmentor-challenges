@@ -29,46 +29,37 @@ body {
     margin: 2rem;
 }
 
-.header-bar {
-    /* margin: 1rem; */
+
+header {
     display: grid;
-    grid-template-columns: 180px;
-    grid-template-rows: 1fr;
-    align-items: center;
+    grid-template-columns: 2fr 1fr;
     justify-content: space-between;
+    grid-template-rows: 1fr;
 }
 
-.typemaster-logo {
-    width: 40px;
-    height: 40px;
-    grid-area: 1 / 1;
+header img {
+    margin: 0.8rem 0;
 }
 
-.preorder-grey {
+.preorder-now-grey {
+    margin-top: 0.4rem;
     width: 150px;
-    height: 40px;
+    height: 48px;
     background-color: var(--light-grey);
     text-transform: uppercase;
-    padding: 10px;
+    padding: 1.4rem 0;
     border-radius: 5px;
     font-size: 16px;
     text-align: center;
     font-weight: 600;
     color: var(--black);
-    grid-area: 1 / 2;
-    align-self: center;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: auto;
-    gap: 3rem;
-    align-items: center;
-    justify-items: center;
+.preorder-now-grey a:any-link {
+    color: var(--black);
 }
 
-.intro__hdg {
+.intro h1 {
     font-weight: 800;
     font-size: 48px;
     text-transform: uppercase;
@@ -76,18 +67,27 @@ main {
     margin: 3rem auto;
 }
 
-.intro__para {
+p {
     color: var(--darkish-grey);
     line-height: 26px;
     margin: 3rem auto;
 }
 
-.preorder-orange {
+.intro {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: auto;
+    align-items: center;
+    width: 330px;
+}
+
+.preorder-now-orange {
+    margin-top: 4px;
     width: 150px;
-    height: 40px;
+    height: 48px;
     background-color: var(--orange);
     text-transform: uppercase;
-    padding: 10px;
+    padding: 14px 0;
     border-radius: 5px;
     font-size: 16px;
     text-align: center;
@@ -95,77 +95,79 @@ main {
     color: var(--white);
 }
 
-.release-date {
-    /* display: inline; */
+.preorder-now-orange a:any-link {
+    color: var(--white);
+}
+
+.description {
+    grid-column: 1 / span2;
+}
+
+.description h3 {
+    margin: 20px 10px;
     font-size: 16px;
     text-transform: uppercase;
     color: var(--darkish-grey);
     text-align: right;
-    margin-top: -20px;
+}
+.release-date h3 {
+    margin: 20px 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--darkish-grey);
+    text-align: right;
 }
 
-.keyboard-images {
-    /* hiding text so only background shows up for the child elements */
-    text-indent: -999999px;
-    white-space: nowrap;
-    display: grid;
-    gap: 2rem;
-    margin: 0;
-
-/*  >>>>>>>>> style the grid to be 1->1 and 2->1/2 <<<<<<<<< */
-
+.images {
+    margin: 5rem 0;
 }
 
-.keyboard-image {
+.keyboard-alone {
     background-image: url("../assets/mobile/image-keyboard.jpg");
+    background-position: top left;
     background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px 0 0 10px;
-    width: 360px;
+    background-clip: border-box;
+    margin-left: 70px;
+    border-radius: 20px 0 0 20px;
+    width: 275px;
     height: 331px;
-    margin-left: 3rem;
-    overflow: hidden;
 }
 
 .keyboard-and-phone {
     background-image: url("../assets/mobile/image-phone-and-keyboard.jpg");
-    background-size: contain;
+    background-position: top right;
+    background-size: cover;
+    background-clip: border-box;
     background-color: var(--orange);
     background-blend-mode: overlay;
-    width: 120px;
+    opacity: 0.75;
+    width: 110px;
     height: 193px;
+    margin-top: 20px;
+    margin-left: -2rem;
     border-radius: 0 20px 20px 0;
 }
 
 .keyboard-and-glass {
     background-image: url("../assets/mobile/image-glass-and-keyboard.jpg");
-    background-size: contain;
-    width: 220px;
+    background-position: top left;
+    background-size: cover;
+    width: 240px;
     height: 193px;
+    /* display: inline-block; */
+    margin-top: -190px;
+    margin-left: 100px;
     border-radius: 20px;
+    margin-right: 0;
 }
-
-.keyboard-desc {
-    margin: 2rem;
-}
-.keyboard-desc__hdg {
+.features h1 {
+    margin: 50px 20px;
     text-align: center;
     line-height: 36px;
     text-transform: uppercase;
     font-size: 36px;
 }
-
-.keyboard-desc__para {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 70px;
-    color: var(--darkish-grey);
-}
-
-.compatible__hdg,
-.wireless__hdg,
-.power__hdg,
-.backlit__hdg {
+.features h2 {
     font-size: 24;
     font-weight: 800;
     line-height: 28px;
@@ -174,14 +176,10 @@ main {
     margin: 30px 60px;
 }
 
-.compatible__para,
-.wireless__para,
-.power__para,
-.backlit__para {
+.features p {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 70px;
-    color: var(--darkish-grey);
 }
 
 .icons {
@@ -193,4 +191,38 @@ main {
     display: block;
     margin: auto;
     object-fit: contain;
+}
+
+/* footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: var(--darkish-grey);
+}
+
+.attribution {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 10px;
+    border-top: 1px solid var(--darkish-grey);
+}
+
+.attribution a:any-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.attribution a:hover,
+.attribution a:active {
+    text-shadow: 0 0 10px var(--attribution-colour);
+}
+
+/* tablet styling */
+@media screen and (max-width: 800px) {
+    .keyboard-alone {
+        width: 320px;
+        margin-left: 440px;
+        /* margin-top: ; */
+    }
+    
 }
