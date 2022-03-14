@@ -55,18 +55,8 @@ header img {
     color: var(--black);
 }
 
-.preorder-now-orange {
-    margin-top: 4px;
-    width: 150px;
-    height: 48px;
-    background-color: var(--orange);
-    text-transform: uppercase;
-    padding: 14px 0;
-    border-radius: 5px;
-    font-size: 16px;
-    text-align: center;
-    font-weight: 600;
-    color: var(--white);
+.preorder-now-grey a:any-link {
+    color: var(--black);
 }
 
 .intro h1 {
@@ -83,15 +73,44 @@ p {
     margin: 3rem auto;
 }
 
-.release-info {
+.intro {
     display: grid;
-    grid-template-columns:  1fr 2fr;
-    justify-content: space-between;
-    grid-template-rows: 1fr;
-    margin: 2rem auto;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: auto;
+    align-items: center;
+    width: 330px;
 }
 
-.release-info h3 {
+.preorder-now-orange {
+    margin-top: 4px;
+    width: 150px;
+    height: 48px;
+    background-color: var(--orange);
+    text-transform: uppercase;
+    padding: 14px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.preorder-now-orange a:any-link {
+    color: var(--white);
+}
+
+.description {
+    grid-column: 1 / span2;
+}
+
+.description h3 {
+    margin: 20px 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--darkish-grey);
+    text-align: right;
+}
+.release-date h3 {
     margin: 20px 10px;
     font-size: 16px;
     text-transform: uppercase;
@@ -100,7 +119,7 @@ p {
 }
 
 .images {
-    margin: 0;
+    margin: 5rem 0;
 }
 
 .keyboard-alone {
@@ -199,7 +218,11 @@ footer {
 }
 
 /* tablet styling */
-@media screen (max-width: 768px) {
-    
+@media screen and (max-width: 800px) {
+    .keyboard-alone {
+        width: 320px;
+        margin-left: 440px;
+        margin-top: ;
+    }
     
 }
