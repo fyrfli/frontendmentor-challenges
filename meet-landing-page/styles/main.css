@@ -19,12 +19,6 @@
     box-sizing: border-box;
 }
 
-/*
-svg {
-    display: none;
-}
-*/
-
 body {
     font-family: "Red Hat Display", sans-serif;
 }
@@ -190,6 +184,7 @@ footer {
 }
 
 footer h2 {
+    margin-top: -160px;
     text-align: center;
     font-size: 32px;
     font-weight: 900;
@@ -239,19 +234,24 @@ footer p {
     text-shadow: 0 0 10px var(--dark-green);
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
     .header-imgs {
-        gap: 10px;
+        background-image: url("../assets/tablet/image-hero.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 375px;
     }
 
     .header-imgs__left,
     .header-imgs__right {
         width: 410px;
         height: 316px;
+        background-image: none;
     }
 
     .header-imgs__left {
         margin-left: -20px;
+        background-image: none;
     }
 
     .header-imgs__right {
@@ -265,6 +265,11 @@ footer p {
 
     .intro h2 {
         font-size: 48px;
+        margin-top: 4rem;
+    }
+
+    #intermission__01 {
+        margin: 4rem auto;
     }
 
     .features {
@@ -280,8 +285,59 @@ footer p {
         display: none;
     }
 
-    text#h2 {
-        font-size: 8px;
+    #intermission__02 {
+        margin-top: 4rem;
+        margin-bottom: -50px;
     }
 
+    footer {
+        background: var(--footer-overlay) url("../assets/tablet/image-footer.jpg") center / cover no-repeat border-box;
+        margin: auto;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    footer h2 {
+        font-size: 40px;
+        text-align: center;
+        -ms-flex-preferred-size: 45%;
+        width: 457px;
+    }
+
+    footer p {
+        text-align: center;
+        width: 573px;
+    }
+
+}
+
+@media only screen and (min-width: 980px) {
+    .header-imgs {
+        height: 375px;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .header-imgs__left {
+        height: 320px;
+        width: 400px;
+        background: url("../assets/desktop/image-hero-left.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .header-imgs__right {
+        height: 320px;
+        width: 400px;
+        background: url("../assets/desktop/image-hero-right.png");
+        background-size: cover;
+    }
 }
