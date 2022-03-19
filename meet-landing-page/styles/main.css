@@ -1,11 +1,21 @@
+/* generics*/
 :root {
-    --dark-green: #1586a2;
-    --footer-overlay: #005266;
-    --light-green: #90e4f9;
     --white: #ffffff;
-    --violet: #845eb0;
-    --pale-violet: #d9b8ff;
-    --greyish-blue: #86869c;
+    --black: #000000;
+    --maroon: #800000;
+    --attribution-colour: #3e52a3;
+    /*    design colours */
+    --dark-dark-blue: #28283D;
+    --grey: #87879D;
+    --sorta-green: #4D96A9;
+    --active-sorta-green: #71C0D4;
+    --purpul: #855FB1;
+    --active-purpul: #B18BDD;
+    --sky-blue: #8FE3F9;
+    --light-purpul: #D9B8FF;
+    --light-grey: #DFDFDF;
+    --off-white: #FAFAFA;
+    /*    end design colours*/
 }
 
 * {
@@ -19,57 +29,92 @@
     box-sizing: border-box;
 }
 
-body {
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+a:-moz-any-link {
+    text-decoration: none;
+}
+
+a:any-link {
+    text-decoration: none;
+}
+
+html {
     font-family: "Red Hat Display", sans-serif;
 }
 
-/* header */
+/*end generics*/
 
-.logo img {
-    margin: 60px auto;
-    display: block;
+
+.top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+
+.logo {
+    grid-column: span 2;
+    -ms-flex-item-align: center;
+    align-self: center;
+    padding: 2rem;
+    margin: auto;
 }
 
 .header-imgs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    gap: 8px;
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    gap: 1rem;
+    margin: auto;
 }
 
 .header-imgs__left {
-    margin-left: -20px;
-    height: 160px;
-    width: 220px;
-    background: url("../assets/desktop/image-hero-left.png");
+    background-image: url("../assets/desktop/image-hero-left.png");
+    background-clip: border-box;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin-left: -0.8rem;
+    width: 188px;
+    height: 153px;
 }
 
 .header-imgs__right {
-    height: 160px;
-    width: 220px;
-    margin-right: -30px;
-    background: url("../assets/desktop/image-hero-right.png");
+    background-image: url("../assets/desktop/image-hero-right.png");
+    background-clip: border-box;
     background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    margin-right: -0.8rem;
+    width: 188px;
+    height: 153px;
 }
 
 .intro {
-    margin: 60px;
-    font-size: 18px;
+    grid-row: 3;
+    grid-column: span 2;
     text-align: center;
+    padding: 1rem;
+}
+
+.intro h2 {
+    font-weight: 900;
+    padding: 1.8rem 2rem 1rem 2rem;
+    font-size: 40px;
 }
 
 .intro p {
-    color: var(--greyish-blue);
-    padding: 40px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--grey);
+    padding: 1.8rem;
 }
 
 .download__top {
@@ -77,12 +122,18 @@ body {
     display: inline-block;
     padding: 20px 60px;
     border-radius: 40px;
-    background-color: var(--dark-green);
+    background-color: var(--sorta-green);
     color: var(--white);
+    font-weight: 800;
+}
+
+.download__top:hover,
+.download__top:active {
+    background-color: var(--active-sorta-green);
 }
 
 .version__top {
-    color: var(--light-green);
+    color: var(--sky-blue);
 }
 
 
@@ -91,8 +142,15 @@ body {
     display: inline-block;
     padding: 20px 30px;
     border-radius: 40px;
-    background-color: var(--violet);
+    background-color: var(--purpul);
     color: var(--white);
+    font-weight: 800;
+
+}
+
+.what-is-it:hover,
+.what-is-it:active {
+    background-color: var(--active-purpul);
 }
 
 .intermission svg {
@@ -102,15 +160,12 @@ body {
     z-index: 9;
 }
 
+
 .images {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
-    gap: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 151px);
+    grid-template-rows: repeat(2, 143px);
+    gap: 1.8rem;
     margin: auto;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -118,81 +173,67 @@ body {
 }
 
 .images__item {
-    display: block;
     width: 151px;
     height: 143px;
     border-radius: 10px;
 }
 
 .features {
-    margin: 4rem 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: column nowrap;
-    flex-flow: column nowrap;
-    gap: 2rem;
+    display: grid;
 }
 
 .features h2 {
-    color: var(--dark-green);
-    text-transform: uppercase;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
-    line-height: 2rem;
+    text-transform: uppercase;
     letter-spacing: 4px;
-    font-weight: 900;
+    color: var(--sorta-green);
+    padding: 2rem;
 }
 
 .features h3 {
-    font-size: 38px;
+    font-size: 32px;
+    font-weight: 900;
     text-align: center;
-    line-height: 2.2rem;
+    padding: 1.2rem;
 }
 
 .features p {
-    font-size: 20px;
-    color: var(--greyish-blue);
+    color: var(--grey);
+    font-size: 16px;
     text-align: center;
-    line-height: 2rem;
+    width: 327px;
+    margin: auto;
 }
 
-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: column nowrap;
-    flex-flow: column nowrap;
-    margin-top: -50px;
-    padding: 100px 0;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    gap: 30px;
-    text-align: center;
-    background: var(--footer-overlay) url("../assets/mobile/image-footer.jpg") center / cover no-repeat border-box;
+.bottom {
+    margin-top: -3.8rem;
+    background-image: url("../assets/mobile/image-footer.jpg");
+    background-clip: border-box;
+    background-origin: border-box;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #4D96A9;
     background-blend-mode: soft-light;
     color: var(--white);
-    position: relative;
-    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 }
 
-footer h2 {
-    margin-top: -160px;
-    text-align: center;
+.bottom h2 {
+    margin-top: 4rem;
     font-size: 32px;
+    text-align: center;
     font-weight: 900;
 }
 
-footer p {
-    font-size: 18px;
+.bottom p {
     text-align: center;
+    padding: 1.8rem;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .download__bottom {
@@ -200,18 +241,19 @@ footer p {
     margin: auto;
     padding: 20px 60px;
     border-radius: 40px;
-    background-color: var(--violet);
+    background-color: var(--purpul);
     color: var(--white);
     font-weight: 900;
 }
 
 .version__bottom {
-    color: var(--pale-violet);
+    color: var(--light-purpul);
 }
 
 .attribution {
+    margin-top: 2rem;
     text-align: center;
-    /* color: var(--white); */
+    padding: 1rem;
 }
 
 .attribution a:-webkit-any-link {
@@ -231,113 +273,67 @@ footer p {
 
 .attribution a:hover,
 .attribution a:active {
-    text-shadow: 0 0 10px var(--dark-green);
+    text-shadow: 0 0 10px var(--sorta-green);
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
     .header-imgs {
         background-image: url("../assets/tablet/image-hero.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 375px;
+        width: 820px;
+        height: 303px;
     }
 
     .header-imgs__left,
     .header-imgs__right {
-        width: 410px;
-        height: 316px;
-        background-image: none;
-    }
-
-    .header-imgs__left {
-        margin-left: -20px;
-        background-image: none;
-    }
-
-    .header-imgs__right {
-        margin-right: -20px;
-    }
-
-    .intro {
-        margin: 1rem auto;
-        width: 500px;
-    }
-
-    .intro h2 {
-        font-size: 48px;
-        margin-top: 4rem;
-    }
-
-    #intermission__01 {
-        margin: 4rem auto;
-    }
-
-    .features {
-        margin: 1rem auto;
-        width: 560px;
-    }
-
-    .features p {
-        font-size: 16px;
-    }
-
-    circle#behind {
         display: none;
     }
 
-    #intermission__02 {
-        margin-top: 4rem;
-        margin-bottom: -50px;
-    }
-
-    footer {
-        background: var(--footer-overlay) url("../assets/tablet/image-footer.jpg") center / cover no-repeat border-box;
-        margin: auto;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -ms-flex-line-pack: center;
-        align-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-
-    footer h2 {
-        font-size: 40px;
-        text-align: center;
-        -ms-flex-preferred-size: 45%;
+    .intro {
         width: 457px;
+        margin: auto;
     }
 
-    footer p {
-        text-align: center;
+    .images {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        justify-items: center;
+        width: 689px;
+        margin: auto;
+        height: 156px;
+    }
+
+    .images__item {
+        width: 164px;
+    }
+
+    .features h3 {
+        font-size: 40px;
+        width: 445px;
+        margin: auto;
+    }
+
+    .features p {
+        margin: auto;
         width: 573px;
     }
 
-}
+    .bottom {
+        background-image: url("../assets/tablet/image-footer.jpg");
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        gap: 0;
+    }
 
-@media only screen and (min-width: 980px) {
-    .header-imgs {
-        height: 375px;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
+    .bottom h2 {
+        font-size: 40px;
+        width: 457px;
+        margin: 4rem auto;
+    }
+
+    .bottom p {
+        width: 573px;
         margin: auto;
-    }
-
-    .header-imgs__left {
-        height: 320px;
-        width: 400px;
-        background: url("../assets/desktop/image-hero-left.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .header-imgs__right {
-        height: 320px;
-        width: 400px;
-        background: url("../assets/desktop/image-hero-right.png");
-        background-size: cover;
     }
 }

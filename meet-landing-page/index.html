@@ -15,16 +15,14 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
+    <header class="top">
+        <section class="logo">
             <img src="assets/logo.svg" alt="Meet logo">
-        </div>
-        <div class="header-imgs">
+        </section>
+        <section class="header-imgs">
             <div class="header-imgs__left"></div>
             <div class="header-imgs__right"></div>
-        </div>
-    </header>
-    <main>
+        </section>
         <section class="intro">
             <h2>Group Chat for Everyone</h2>
             <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
@@ -33,28 +31,30 @@
             <a href="#" class="download__top">Download <span class="version__top">v1.3</span></a>
             <a href="#" class="what-is-it">What is it?</a>
         </section>
-        <section class="intermission">
-            <!-- <h3>01</h3> -->
-            <svg id="intermission__01" width="60px" height="200px">
-                <line x1="28" x2="28" y1="10" y2="120" stroke="hsl(240, 10%, 57%)" stroke-width="2" />
-                <circle cx="28" cy="146" r="26" stroke="#86869c" fill="transparent" stroke-width="2" />
-                <text id="no" x="18" y="152">01</text>
-                <style>
-                    #no {
-                        font-family: "Red Hat Display", sans-serif;
-                        font-weight: 900;
-                        font-size: 16px;
-                        fill: #86869c;
-                    }
 
-                </style>
-            </svg>
-        </section>
+    </header>
+    <section class="intermission">
+        <svg id="intermission__01" width="60px" height="200px">
+            <line x1="28" x2="28" y1="10" y2="120" stroke="hsl(240, 10%, 57%)" stroke-width="2" />
+            <circle cx="28" cy="146" r="26" stroke="#86869c" fill="transparent" stroke-width="2" />
+            <text id="no" x="18" y="152">01</text>
+            <style>
+                #no {
+                    font-family: "Red Hat Display", sans-serif;
+                    font-weight: 900;
+                    font-size: 16px;
+                    fill: #86869c;
+                }
+
+            </style>
+        </svg>
+    </section>
+    <main class="middle">
         <section class="images">
             <img src="assets/desktop/image-woman-in-videocall.jpg" alt="Image of a woman looking at her latop screen" class="images__item">
             <img src="assets/desktop/image-women-videochatting.jpg" alt="Image of 3 women looking at mobile phone screen" class="images__item">
             <img src="assets/desktop/image-men-in-meeting.jpg" alt="Image of a man in a video call on laptop with another man" class="images__item">
-            <img src="assets/desktop/image-man-texting.jpg" alt="Image os a man looking at his mobile phone" class="images__item">
+            <img src="assets/desktop/image-man-texting.jpg" alt="Image of a man looking at his mobile phone" class="images__item">
         </section>
         <section class="features">
             <h2>Built for modern use</h2>
@@ -83,25 +83,7 @@
             <text id="no" x="18" y="152">02</text>
         </svg>
     </section>
-    <footer>
-
-        <svg viewbox="0 0 100 100" width="100%" height="160">
-            <style>
-                #behind {
-                    display: inline;
-                    opacity: 0.5;
-                }
-
-                #h2 {
-                    font-family: "Red Hat Display", sans-serif;
-                    font-weight: 900;
-                    font-size: 40px;
-                    fill: white;
-                }
-
-            </style>
-            <circle id="behind" cx="30" cy="45" r="30" fill="lightgrey" stroke="lightgrey" stroke-width="2" />
-        </svg>
+    <footer class="bottom">
         <h2>Experience more together</h2>
         <p>
             Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
