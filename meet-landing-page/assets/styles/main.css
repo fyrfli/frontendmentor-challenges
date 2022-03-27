@@ -288,13 +288,6 @@ html {
   .images__item {
     width: 164px;
   }
-  .features h2 {
-    font-size: 16px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    color: var(--sorta-green);
-  }
 
   .features h3 {
     font-size: 40px;
