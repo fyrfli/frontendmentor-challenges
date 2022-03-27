@@ -349,6 +349,10 @@ html {
     grid-area: intro;
   }
 
+  .intro h1 {
+    font-size: 64px;
+  }
+
   .header-img__right {
     height: 400px;
     width: 100%;
