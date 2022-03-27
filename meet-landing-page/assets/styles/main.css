@@ -63,33 +63,6 @@ html {
   margin: auto;
 }
 
-/*
-.header-imgs__one {
-    display: none;
-}
-
-.header-imgs__left {
-    background-image: url("../desktop/image-hero-left.png");
-    background-clip: border-box;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top right;
-    margin-left: -0.8rem;
-    width: 188px;
-    height: 153px;
-}
-
-.header-imgs__right {
-    background-image: url("../desktop/image-hero-right.png");
-    background-clip: border-box;
-    background-size: cover;
-    background-position: top left;
-    background-repeat: no-repeat;
-    margin-right: -0.8rem;
-    width: 188px;
-    height: 153px;
-}
-*/
 .header-img__one {
   display: none;
 }
@@ -188,6 +161,7 @@ html {
 
 .features {
   display: grid;
+  margin: 4rem auto;
 }
 
 .features h2 {
@@ -196,7 +170,6 @@ html {
   text-transform: uppercase;
   letter-spacing: 4px;
   color: var(--sorta-green);
-  padding: 2rem;
 }
 
 .features h3 {
@@ -283,7 +256,7 @@ html {
 .attribution a:active {
   text-shadow: 0 0 10px var(--sorta-green);
 }
-/* table setttings */
+/* tablet setttings */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .header-img__one {
     width: 110%;
@@ -314,6 +287,13 @@ html {
 
   .images__item {
     width: 164px;
+  }
+  .features h2 {
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--sorta-green);
   }
 
   .features h3 {
@@ -367,7 +347,7 @@ html {
   }
 
   .header-img__left {
-    height: 358px;
+    height: 400px;
     width: 100%;
     grid-area: left;
   }
@@ -396,16 +376,25 @@ html {
 
   .features {
     width: 570px;
-    margin: auto;
+  }
+
+  .features h2 {
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--sorta-green);
+    line-height: 26px;
   }
 
   .features h3 {
     font-size: 40px;
+    line-height: 44px;
   }
 
   .features p {
-    width: 570px;
-    margin: auto;
+    width: 540px;
+    font-size: 18px;
   }
 
   .bottom {
