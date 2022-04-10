@@ -17,7 +17,7 @@ Users should be able to:
 
 ## Links
 
-- Solution URL: [Code](https://github.com/fyrfli/frontendmentor.io-challenges/tree/interactive-rating-component)
+- Solution URL: [Code](https://github.com/fyrfli/frontendmentor-challenges/tree/master/interactive-rating-component)
 - Live Site URL: [Live](hhttps://fyrfli.github.io/frontendmentor-challenges/interactive-rating-component)
 
 ## My process
