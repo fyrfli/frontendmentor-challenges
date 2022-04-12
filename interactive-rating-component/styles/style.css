@@ -103,7 +103,7 @@ body {
   background-color: var(--dark-blue);
   border-radius: 50%;
   color: var(--medium-grey);
-  padding: 1rem;
+  padding: 0.9rem;
   font-size: 0.94em;
 }
 
@@ -112,6 +112,7 @@ body {
 .btn-active {
   background-color: var(--medium-grey);
   color: var(--white);
+  cursor: pointer;
 }
 
 .rating-card__submit {
@@ -127,6 +128,7 @@ body {
 .rating-card__submit:active {
   background-color: var(--white);
   color: var(--orange);
+  cursor: pointer;
 }
 
 /* thank you card */
