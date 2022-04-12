@@ -39,7 +39,7 @@ a:any-link {
 
 /* body styling */
 body {
-  background: radial-gradient(var(--radial-one), var(--radial-two));
+  background-color: var(--black);
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Overpass", sans-serif;
@@ -62,7 +62,7 @@ body {
 /* cards */
 /* rating card */
 .rating-card {
-  width: 327px;
+  width: 340px;
   height: 360px;
   background: var(--radial-one);
   border-radius: 15px;
@@ -132,7 +132,7 @@ body {
 /* thank you card */
 
 .thankyou-card {
-  width: 327px;
+  width: 340px;
   height: 360px;
   background: var(--radial-one);
   border-radius: 15px;
