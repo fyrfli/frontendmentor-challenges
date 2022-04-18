@@ -1,3 +1,13 @@
+@vlightmagenta: hsl(289, 100%, 72%);
+@paleviolet: hsl(276, 100%, 81%);
+@attribution-color: hsl(241, 45%, 44%);
+@medviolet: hsl(276, 55%, 52%);
+@desatdarkviolet: hsl(271, 15%, 43%);
+@greyishblue: hsl(206, 6%, 79%);
+@vdarkdesatviolet: hsl(271, 36%, 24%);
+@lightgreyviolet: hsl(270, 20%, 96%);
+@maroon: hsl(0, 100%, 25%);
+
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +17,24 @@
   border: none;
   box-sizing: border-box;
 }
+
+.pos-over() {
+  position: relative;
+  z-index: 5;
+}
+
+.span-all-rows() {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   font-size: 16px;
 }
+
 .background-stuff {
-  background: linear-gradient(hsl(289, 100%, 72%), hsl(276, 55%, 52%));
+  background: linear-gradient(@vlightmagenta, @medviolet);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: auto;
@@ -24,9 +46,9 @@ body {
   position: fixed;
   z-index: 0;
 }
+
 .conversation {
-  position: relative;
-  z-index: 5;
+  .pos-over();
   width: 247px;
   height: 505px;
   margin: 4rem auto 0;
@@ -35,74 +57,85 @@ body {
   border-radius: 30px;
   padding: 10px;
 }
+
 .contact {
   display: grid;
   grid-template-columns: 0.2fr 0.4fr 2fr 0.2fr;
   grid-template-rows: repeat(3, 0.8fr);
-  background: linear-gradient(hsl(276, 55%, 52%), hsl(289, 100%, 72%));
+  background: linear-gradient(@medviolet, @vlightmagenta);
   background-attachment: fixed;
   color: white;
 }
+
 .before-icon {
   grid-column: 1;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  .span-all-rows();
 }
+
 .contact-name {
   grid-column: 3;
   grid-row: 2;
 }
+
 .contact-status {
   grid-column: 3;
   grid-row: 3;
 }
+
 .after-icon {
-  grid-row-start: 1;
-  grid-row-end: 3;
+  .span-all-rows();
 }
+
 .contact img {
-  grid-row: 2 / 3;
+  grid-row: 2 /3;
   grid-column: 2;
   width: 24px;
   height: 24px;
   border: 2px solid white;
   border-radius: 24px;
 }
+
 .chat-content {
   display: grid;
   grid-template-rows: repeat(8, 1fr);
   grid-template-columns: repeat(2, 1fr);
 }
+
 .their-message {
   grid-column: 1;
   text-align: left;
 }
+
 .my-messages {
   grid-column: 2;
   text-align: right;
 }
+
 .my-images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.2rem;
 }
+
 .my-images img {
   width: 40px;
   height: 40px;
   border-radius: 10px;
 }
+
 .description {
-  position: relative;
-  z-index: 5;
+  .pos-over();
 }
+
 footer {
-  position: relative;
-  z-index: 5;
+  .pos-over();
 }
+
 .attribution {
   font-size: 12px;
   text-align: center;
 }
+
 .attribution a:hover {
-  text-shadow: 0 0 12px hsl(0, 100%, 25%);
+  text-shadow: 0 0 12px @maroon;
 }

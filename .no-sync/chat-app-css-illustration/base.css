@@ -1,0 +1,55 @@
+/* generics */
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --maroon: hsl(0, 100%, 25%);
+  --attribution-colour: hsl(241, 45%, 44%);
+  /* Challenge colours */
+  --pale-violet: hsl(276, 100%, 81%);
+  --moderate-violet: hsl(276, 55%, 52%);
+  --desaturated-dark-violet: hsl(271, 15%, 43%);
+  --greyish-blue: hsl(206, 6%, 79%);
+  --very-dark-desaturated-violet: hsl(271, 36%, 24%);
+  --dark-greyish-violet: hsl(270, 7%, 64%);
+  --light-greyish-violet: hsl(270, 20%, 96%);
+  --very-light-magenta: hsl(289, 100%, 72%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Rubik", sans-serif;
+}
+
+.background-stuff {
+  background: linear-gradient(to left bottom, var(--pale-violtet), var(--very-light-magenta));
+  background-repeat: no-repeat;
+  background-clip: padding-box;
+  background-size: auto;
+}
+
+
+
+/* attribtion */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--attribution-colour);
+}
+
+.attribution a:hover {
+  text-shadow: 0 0 12px var(--maroon);
+}
