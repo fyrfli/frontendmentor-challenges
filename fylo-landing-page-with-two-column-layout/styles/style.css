@@ -1,0 +1,249 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v28/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0C4n.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/opensans/v28/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1y4n.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v26/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaooCP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/raleway/v26/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pYCP.ttf) format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  padding: 1.8rem 0;
+  margin: auto;
+}
+.page-header a {
+  color: hsl(238, 22%, 44%);
+}
+.page-header a:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+.header-logo {
+  width: 80px;
+  height: 24px;
+}
+.header-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  justify-self: flex-end;
+}
+.fylo-illustration {
+  width: 304px;
+  margin: 2rem auto;
+}
+.intro {
+  width: 85vw;
+  padding-bottom: 3rem;
+  margin: auto;
+}
+h2 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 800;
+  padding: 1.6rem 0;
+}
+.para {
+  font-size: 14px;
+  text-align: center;
+  padding: 1.2rem 0;
+  line-height: 24px;
+}
+.email-addr {
+  width: 304px;
+  height: 40px;
+  border: 1px solid hsl(243, 87%, 12%);
+  border-radius: 4px;
+  color: hsl(0, 0%, 75%);
+  padding: 0 1rem;
+}
+button {
+  margin: 1rem auto;
+  background-color: hsl(224, 93%, 58%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  padding: 1.2rem;
+  width: 304px;
+  border-radius: 4px;
+}
+.page-bottom {
+  background-color: hsl(240, 75%, 98%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.background-curve-image {
+  object-fit: contain;
+  object-position: center top;
+  width: 100%;
+  height: auto;
+}
+.features {
+  width: 85vw;
+  padding-bottom: 3rem;
+  margin: auto;
+}
+.features-para {
+  color: hsl(238, 22%, 44%);
+}
+.fylo-demo {
+  margin: auto;
+  color: hsl(170, 45%, 43%);
+  text-align: center;
+  padding: 1.2rem;
+}
+.fylo-demo a {
+  color: hsl(170, 45%, 43%);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+.features .feather {
+  fill: hsl(170, 45%, 43%);
+  color: hsl(0, 0%, 100%);
+  vertical-align: middle;
+}
+.ceo-testimonial {
+  width: 280px;
+  background-color: hsl(0, 0%, 100%);
+  line-height: 18.2px;
+  color: hsl(243, 87%, 12%);
+  font-size: 10px;
+  padding: 1.8rem;
+  border-radius: 4px;
+  margin: auto;
+}
+.quote-icon {
+  width: 14px;
+  height: 14px;
+}
+.ceo-testimonial__para {
+  margin: 1.8rem 0;
+}
+.ceo-testimonial__id {
+  display: grid;
+  grid-template-columns: 0.4fr 1.8fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+.ceo-portrait {
+  width: 24px;
+  border-radius: 50%;
+  grid-row: 1 / 3;
+  grid-column: 1;
+  align-self: center;
+  justify-self: center;
+}
+.ceo-name {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 9px;
+  font-weight: bold;
+}
+.ceo-title {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 6px;
+}
+.pre-footer {
+  width: 85vw;
+  padding-bottom: 3rem;
+  margin: auto;
+  background-color: hsl(238, 22%, 44%);
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  padding-bottom: 1.8rem;
+}
+.pre-footer-hdg {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.pre-footer-para {
+  width: 280px;
+  font-size: 14px;
+  text-align: center;
+  margin: auto;
+}
+.pre-footer-signup {
+  width: 240px;
+  margin: auto;
+}
+.pre-footer-signup .email-addr,
+.pre-footer-signup button {
+  width: 240px;
+  margin: 0.2rem auto;
+}
+.footer {
+  background-color: hsl(243, 87%, 12%);
+  color: hsl(0, 0%, 100%);
+  padding: 1rem;
+  background-attachment: fixed;
+  font-size: 16px;
+}
+.ftr-fylo-logo {
+  color: hsl(0, 0%, 100%);
+  width: 105px;
+  height: 30px;
+  filter: grayscale(100%) invert(100%) brightness(600%);
+}
+.footer-nav {
+  margin: 2rem 0;
+  line-height: 2em;
+}
+.contact-info {
+  margin: 1rem 0;
+  display: flex;
+  flex-flow: column;
+}
+.socials {
+  display: flex;
+  gap: 1rem;
+  width: 104px;
+  margin: auto;
+}
+.attribution {
+  margin: 2rem auto;
+  border-top: 1px solid hsl(0, 0%, 100%);
+  font-size: 11px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+.attribution a {
+  color: hsl(0, 0%, 75%);
+}

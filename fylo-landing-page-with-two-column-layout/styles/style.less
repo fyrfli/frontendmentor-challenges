@@ -1,0 +1,284 @@
+// Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+// Headings,Call-to-actions,Header Navigation = Raleway
+// Body = Open Sans
+
+// Design colours
+// Primary 
+@verydarkblue: hsl(243, 87%, 12%);
+@desaturatedblue: hsl(238, 22%, 44%);
+
+// Accent
+@brightblue: hsl(224, 93%, 58%);
+@moderatecyan: hsl(170, 45%, 43%);
+
+//Neutral
+@lightgreyishblue: hsl(240, 75%, 98%);
+@lightgrey: hsl(0, 0%, 75%);
+
+//Other colours
+@attributioncolour: hsl(228, 45%, 44%);
+@white: hsl(0, 0%, 100%);
+
+.section-width () {
+  width: 85vw;
+  padding-bottom: 3rem;
+  margin: auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  padding: 1.8rem 0;
+  margin: auto;
+}
+
+.page-header a {
+  color: @desaturatedblue;
+}
+
+.page-header a:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.header-logo {
+  width: 80px;
+  height: 24px;
+}
+
+.header-nav {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  justify-self: flex-end;
+}
+
+.fylo-illustration {
+  width: 304px;
+  margin: 2rem auto;
+}
+
+.intro {
+  .section-width();
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 800;
+  padding: 1.6rem 0;
+}
+
+.para {
+  font-size: 14px;
+  text-align: center;
+  padding: 1.2rem 0;
+  line-height: 24px;
+}
+
+.email-addr {
+  width: 304px;
+  height: 40px;
+  border: 1px solid @verydarkblue;
+  border-radius: 4px;
+  color: @lightgrey;
+  padding: 0 1rem;
+}
+
+button {
+  margin: 1rem auto;
+  background-color: @brightblue;
+  color: @white;
+  text-align: center;
+  padding: 1.2rem;
+  width: 304px;
+  border-radius: 4px;
+}
+
+.page-bottom {
+  background-color: @lightgreyishblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-curve-image {
+  object-fit: contain;
+  object-position: center top;
+  width: 100%;
+  height: auto;
+  // margin-bottom: -2rem;
+}
+
+.features {
+  .section-width();
+}
+
+.features-para {
+  color: @desaturatedblue;
+}
+
+.fylo-demo {
+  margin: auto;
+  color: @moderatecyan;
+  text-align: center;
+  padding: 1.2rem;
+}
+
+.fylo-demo a {
+  color: @moderatecyan;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.features .feather {
+  fill: hsl(170, 45%, 43%);
+  color: @white;
+  vertical-align: middle;
+}
+
+.ceo-testimonial {
+  width: 280px;
+  background-color: @white;
+  line-height: 18.2px;
+  color: @verydarkblue;
+  font-size: 10px;
+  padding: 1.8rem;
+  border-radius: 4px;
+  margin: auto;
+}
+
+.quote-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.ceo-testimonial__para {
+  margin: 1.8rem 0;
+}
+
+.ceo-testimonial__id {
+  display: grid;
+  grid-template-columns: 0.4fr 1.8fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.ceo-portrait {
+  width: 24px;
+  border-radius: 50%;
+  grid-row: 1 / 3;
+  grid-column: 1;
+  align-self: center;
+  justify-self: center;
+}
+
+.ceo-name {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.ceo-title {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 6px;
+}
+
+.pre-footer {
+  .section-width();
+  background-color: @desaturatedblue;
+  color: @white;
+  width: 100%;
+  padding-bottom: 1.8rem;
+}
+
+.pre-footer-hdg {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.pre-footer-para {
+  width: 280px;
+  font-size: 14px;
+  text-align: center;
+  margin: auto;
+}
+
+.pre-footer-signup {
+  width: 240px;
+  margin: auto;
+}
+
+.pre-footer-signup .email-addr,
+.pre-footer-signup button {
+  width: 240px;
+  margin: 0.2rem auto;
+}
+
+
+//Footer styling
+
+.footer {
+  background-color: @verydarkblue;
+  color: @white;
+  padding: 1rem;
+  background-attachment: fixed;
+  font-size: 16px;
+}
+
+.ftr-fylo-logo {
+  color: @white;
+  width: 105px;
+  height: 30px;
+  filter: grayscale(100%) invert(100%) brightness(600%);
+}
+
+.footer-nav {
+  margin: 2rem 0;
+  line-height: 2em;
+}
+
+.contact-info {
+  margin: 1rem 0;
+  display: flex;
+  flex-flow: column;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  width: 104px;
+  margin: auto;
+}
+
+.attribution {
+  margin: 2rem auto;
+  border-top: 1px solid @white;
+  font-size: 11px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: @white;
+}
+
+.attribution a {
+  color: @lightgrey;
+}
