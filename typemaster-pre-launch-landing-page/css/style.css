@@ -101,29 +101,28 @@ body {
   flex-direction: column;
 }
 .showcase__images {
+  padding-top: 2rem;
   display: flex;
   width: 100vw;
   gap: 0.8rem;
-}
-.showcase__image {
-  height: 193px;
-  width: auto;
+  margin-left: -3rem;
 }
 .showcase__image-one {
   background-color: hsl(22, 89%, 52%);
   mix-blend-mode: overlay;
   filter: brightness(80%) saturate(90%);
   border-radius: 20px;
-  margin-left: -2rem;
 }
 .showcase__image-one img {
+  width: 129px;
+  height: 193px;
   object-position: center;
   background-color: hsl(22, 89%, 52%);
   mix-blend-mode: overlay;
   border-radius: 20px;
-  flex-shrink: 1;
 }
 .showcase__image-two img {
+  height: 193px;
   object-fit: cover;
   object-position: left;
   border-radius: 20px;
@@ -182,4 +181,88 @@ body {
   color: hsl(221, 23%, 58%);
   text-align: center;
   font-size: 0.8rem;
+}
+@media only screen and (min-width: 768px) and (max-width: 810px) {
+  .intro {
+    flex-direction: row;
+    padding: 2rem;
+  }
+  .intro__img {
+    margin-right: -8rem;
+  }
+  .showcase__images {
+    padding: 2rem;
+    justify-content: space-evenly;
+  }
+  .showcase__image-one,
+  .showcase__image-one img {
+    width: 214px;
+    height: 320px;
+    margin-left: 0;
+  }
+  .showcase__image-two,
+  .showcase__image-two img {
+    width: 445px;
+    height: 320px;
+  }
+  .showcase__details {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .showcase__details-hdr {
+    flex-shrink: 1;
+  }
+  .features {
+    flex-flow: row wrap;
+    text-align: left;
+  }
+  .feature__item {
+    width: 20rem;
+  }
+}
+@media only screen and (min-width: 980px) {
+  body {
+    width: 80vw;
+    margin: auto;
+  }
+  .intro {
+    flex-direction: row;
+    padding: 2rem;
+  }
+  .intro__img {
+    width: 580px;
+  }
+  .showcase__images {
+    padding: 2rem;
+    justify-content: space-evenly;
+  }
+  .showcase__image-one,
+  .showcase__image-one img {
+    width: 214px;
+    height: 320px;
+    margin-left: 0;
+  }
+  .showcase__image-two,
+  .showcase__image-two img {
+    width: 445px;
+    height: 320px;
+  }
+  .showcase__details {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+  .showcase__details-hdr {
+    flex-shrink: 1;
+  }
+  .features {
+    flex-flow: row wrap;
+    text-align: left;
+  }
+  .feature__item {
+    width: 20rem;
+  }
 }
